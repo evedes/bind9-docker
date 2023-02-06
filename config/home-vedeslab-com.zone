@@ -1,0 +1,37 @@
+$TTL 2d
+
+$ORIGIN home.vedeslab.com.
+
+@               IN      SOA     ns.home.vedeslab.com  vedeslab.gmail.com.  (
+                                2023020638   ; serial
+                                12h          ; refresh
+                                15m          ; retry
+                                3w           ; expire
+                                2h           ; minimum ttl
+                                )
+
+                IN      NS      ns.home.vedeslab.com.
+
+ns              IN      A       192.168.2.204
+
+; -- add dns records below
+
+www             IN      A       192.168.2.200
+home            IN      A       192.168.2.200
+
+; -- demo servers
+
+rubik           IN      A     192.168.2.200
+truenas         IN      A     192.168.2.201
+prometheus      IN      A     192.168.2.202
+retropie        IN      A     192.168.2.203
+alien           IN      A     192.168.2.204
+archlinux       IN      A     192.168.2.205
+
+hplaser         IN      A     192.168.2.210
+hpofficejet     IN      A     192.168.2.211
+
+kmaster         IN      A     192.168.2.220
+kworker1        IN      A     192.168.2.221
+kworker2        IN      A     192.168.2.222
+kworker3        IN      A     192.168.2.223
